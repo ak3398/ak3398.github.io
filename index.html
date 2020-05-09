@@ -9,10 +9,13 @@
 
 
 
-    <script>
+    <script >
     	
     let promise= fetch('coffee.jpg');
+    //let promise2= promise.then(function (response){ return response.blob;})
+    let promise2= promise.then(response =>{ return response.blob;})
 
+   
 
     </script>
   </body>
